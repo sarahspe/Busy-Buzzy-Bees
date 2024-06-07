@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerFlying : MonoBehaviour
 {
     [SerializeField] private float _velocity = 1.5f;
-
+    [SerializeField] private float _rotationSpeed = 10f;
+    
     private Rigidbody2D _rb; 
 
     // Start is called before the first frame update
@@ -20,5 +21,9 @@ public class PlayerFlying : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
             _rb.velocity = Vector2.up * _velocity;
 
+    }
+
+    private void FixedUpdate(){
+        transform.rotation = Quaternion.Euler(0, 0, _rb.velocity.y * _rotationSpeed);
     }
 }
