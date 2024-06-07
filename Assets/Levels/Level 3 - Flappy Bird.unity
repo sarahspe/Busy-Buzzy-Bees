@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 144961990}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 2.87, z: -0.053572588}
+  m_LocalPosition: {x: 1.1, y: 2.87, z: -0.053572588}
   m_LocalScale: {x: 0.4, y: 0.46475893, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -239,7 +239,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.19641614, y: 1.774993}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -250,7 +250,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12, y: 12}
+  m_Size: {x: 3.2005982, y: 8.450014}
   m_EdgeRadius: 0
 --- !u!1 &236203148
 GameObject:
@@ -497,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 638877182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.271, y: 0.062, z: 0}
+  m_LocalPosition: {x: -0.67, y: -0.33, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -679,7 +679,7 @@ Transform:
   m_GameObject: {fileID: 792070942}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 2, y: -2.38, z: -0.053572588}
+  m_LocalPosition: {x: 1.1, y: -2.38, z: -0.053572588}
   m_LocalScale: {x: 0.4, y: 0.46475893, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -717,7 +717,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.15690076, y: 1.7940694}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -728,7 +728,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12, y: 12}
+  m_Size: {x: 3.3481052, y: 8.411861}
   m_EdgeRadius: 0
 --- !u!1 &984843646
 GameObject:
@@ -921,7 +921,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.36
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
