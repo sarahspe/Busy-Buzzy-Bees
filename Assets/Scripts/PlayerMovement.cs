@@ -30,6 +30,12 @@ public class NewBehaviorScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
+        if(Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
+            body.velocity = new Vector2(body.velocity.x, body.velocity.y/2);
+
+        else
+            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
         anim.SetBool("Walk to Run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
     }
@@ -37,6 +43,7 @@ public class NewBehaviorScript : MonoBehaviour
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, speed);
+        anim.SetTrigger("jump");
         grounded = false;
     }
 
