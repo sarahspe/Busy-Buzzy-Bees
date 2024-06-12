@@ -6,10 +6,10 @@ public class CameraController : MonoBehaviour
     private float currentPosX;
     private Vector3 velocity = Vector3.zero;
 
-    [SerializeField] private Transform player;
-    [SerializeField] private float aheadDistance;
-    [SerializeField] private float cameraSpeed;
-    private float lookAhead;
+    //[SerializeField] private Transform player;
+    //[SerializeField] private float aheadDistance;
+    //[SerializeField] private float cameraSpeed;
+    //private float lookAhead;
 
     private void Update()
     {
@@ -19,6 +19,6 @@ public class CameraController : MonoBehaviour
 
     public void MoveToNewRoom(Transform _newRoom)
     {
-        currentPosX = _newRoom.position.x;
+        currentPosX = _newRoom.position.x-4;
     }
 }
