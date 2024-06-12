@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -214,6 +215,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4cd051243b0b44297d8c8d0ccad1fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followSpeed: 2
+  target: {fileID: 2023324215}
 --- !u!1 &1064909441
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,18 +411,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00854224}
+  m_Offset: {x: 0.05316162, y: -0.025710583}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.0170845}
+  m_Size: {x: 5.268075, y: 5.2198496}
   m_EdgeRadius: 0
 --- !u!50 &2023324213
 Rigidbody2D:
@@ -477,7 +492,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66099fafd72b5984cb858b610cb0fcda, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -497,8 +512,8 @@ Transform:
   m_GameObject: {fileID: 2023324210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6372702, y: -0.4955, z: 0}
-  m_LocalScale: {x: 1, y: 0.9829, z: 1}
+  m_LocalPosition: {x: -0.53, y: 1.05, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -512,7 +527,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023324210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3db94f77d2c65574490053cf74da1d2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d82c0463e48f10489da3f05d862bb77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
