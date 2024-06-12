@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerFlying : MonoBehaviour
 {
-    [SerializeField] private float _velocity = 1.5f;
+    [SerializeField] private float _velocity = 2.5f;
     [SerializeField] private float _rotationSpeed = 10f;
     
     private Rigidbody2D _rb; 
