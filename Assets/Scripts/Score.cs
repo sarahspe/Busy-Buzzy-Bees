@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 public class Score : MonoBehaviour
 {
@@ -20,13 +21,16 @@ public class Score : MonoBehaviour
 
     private void Start(){
         _currentScoreText.text = _score.ToString();
-    
     }
+
 
     // Update is called once per frame
     public void UpdateScore()
     {
         _score+=.5;
         _currentScoreText.text = _score.ToString();
+        if (_score >= 10){
+            SceneManager.LoadScene("endingscene");
+        }
     }
 }
