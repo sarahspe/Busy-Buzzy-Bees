@@ -11,7 +11,7 @@ public class Caterpillart : MonoBehaviour
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
-        DontDestroyOnLoad(transform.gameObject);
+        // DontDestroyOnLoad(transform.gameObject);
         // anim = GetComponent<Animator>();
     }
 
