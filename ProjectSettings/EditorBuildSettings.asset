@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level 2 - parkour.unity
     guid: 2c2350680cffcfd46be68ff8a5229aa2
+  - enabled: 1
+    path: Assets/Levels/Level 3 - Flappy Bird.unity
+    guid: fdc54dd85e76d9547aa9b17b7e2a1d22
+  - enabled: 1
+    path: Assets/Levels/endingscene.unity
+    guid: 2db663d578b92dc42a294556299386ce
   m_configObjects: {}
