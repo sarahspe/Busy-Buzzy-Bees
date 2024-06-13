@@ -1,7 +1,6 @@
-using UnityEditor;
 using UnityEngine;
 
-public class NewBehaviorScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D body;
@@ -10,8 +9,8 @@ public class NewBehaviorScript : MonoBehaviour
 
     private void Awake()
     {
+        //Grabs references for rigidbody and animator from game object.
         body = GetComponent<Rigidbody2D>();
-        DontDestroyOnLoad(transform.gameObject);
         anim = GetComponent<Animator>();
     }
 
@@ -20,22 +19,17 @@ public class NewBehaviorScript : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
+        //Flip player when facing left/right.
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
-
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
-        if(Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
-            body.velocity = new Vector2(body.velocity.x, body.velocity.y/2);
-
-        else
-            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-
-        anim.SetBool("Walk to Run", horizontalInput != 0);
+        //sets animation parameters
+        anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
     }
 
@@ -48,8 +42,7 @@ public class NewBehaviorScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       if (collision.gameObject.tag == "Ground")
-           grounded = true;
+        if (collision.gameObject.tag == "Ground")
+            grounded = true;
     }
-
 }
