@@ -12,7 +12,7 @@ public class Level2End : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             // Load the next level
-            SceneManager.LoadScene("Level 3 - Flappy Bird");
+            SceneManager.LoadScene("Surprise");
         }
     }
 }
