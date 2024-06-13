@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/endingscene.unity
     guid: 2db663d578b92dc42a294556299386ce
+  - enabled: 1
+    path: Assets/Levels/Starting Menu.unity
+    guid: 78cabf78c7b9d7348bb2defc744417b2
   m_configObjects: {}
