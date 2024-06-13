@@ -11,6 +11,6 @@ public class menuChoices : MonoBehaviour
     }
 
     public void clickQuit(){
-        SceneManager.LoadScene("Starting Menu");
+        Application.Quit();
     }
 }
